@@ -5,7 +5,7 @@
 -- =============================================================================
 SET NAMES utf8mb4;
 
-USE ptit_library_db;
+USE ptit_lab_db;
 
 CREATE TABLE IF NOT EXISTS books (
     id              BIGINT AUTO_INCREMENT PRIMARY KEY,
