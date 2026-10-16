@@ -42,6 +42,13 @@ SERVER_SSH_KEY
 
 anh3: ssh tienvv-k24cntt4@221.121.3.208
 cd ~/devops-test14
+cd ~/devops-final-de008-vuviettien
+
+docker compose --env-file student.env ps
+docker compose --env-file student.env logs --tail=100 app
+docker compose --env-file student.env logs --tail=100 nginx
+docker compose --env-file student.env logs --tail=100 mysql
+
 docker compose --env-file student.env ps
 docker compose --env-file student.env logs --tail=100 app
 docker compose --env-file student.env logs --tail=100 nginx

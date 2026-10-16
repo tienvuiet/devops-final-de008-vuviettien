@@ -17,9 +17,7 @@ public class BookController {
     public BookController(BookRepository repository) {
         this.repository = repository;
     }
-
-    /** GET /api/books hoặc /api/labs - thông tin sinh viên và danh sách sách. */
-    @GetMapping({"/books", "/labs"})
+    @GetMapping({"/books"})
     public Map<String, Object> submission() {
         Map<String, String> env = System.getenv();
         return Map.of(
