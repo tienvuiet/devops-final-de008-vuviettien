@@ -20,7 +20,7 @@ public class BookController {
         this.repository = repository;
     }
 
-    /** GET /api/books - danh sách sách trong thư viện */
+    /** GET /api/books - danh sách sách tg thư viện */
 //    @GetMapping("/books")
 //    public List<Book> findAll() {
 //        return repository.findAll(Sort.by("id"));
